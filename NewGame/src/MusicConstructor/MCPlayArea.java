@@ -1,5 +1,6 @@
 package MusicConstructor;
 import java.awt.Color;
+import java.awt.image.BufferedImage;
 import java.util.List;
 import java.util.Set;
 
@@ -12,11 +13,15 @@ public class MCPlayArea extends GContainer {
 	public MCPlayArea(){
 		setSize(800,600);
 		this.setBackgroundColor(Color.black);
-		/*
-		Buffered Image bg= ImageCache.forClass(musicContructor.class).get(
-				"musicGameStage1.jpg"));
-				GSprite gs = new GSprite(bg);
-				Set<E>.classBackgoundSprite(gs);
-				*/
+		
+		BufferedImage bg= ImageCache.forClass(musicConstructor.class).get(
+				"musicGameStage1.jpg");
+				
+				
 	}
-}
+
+	
+		
+	}
+
+

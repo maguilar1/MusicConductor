@@ -8,15 +8,17 @@ import jgame.ImageCache;
 public class musicConstructor  extends Game {
 
 	
+	
 	public void main(String [] args){
-		
+		 
+	
           
 		musicConstructor Game = new musicConstructor();
             Game.startGame("musicContructor");
-    }
-
+    
+	}
     public musicConstructor(){
-            ImageCache.create(musicConstructor.class, "/MCesources");
+            ImageCache.create(musicConstructor.class, "/MC/rsc");
 
             GRootContainer root = new GRootContainer(Color.BLACK);
             setRootContainer(root);
@@ -27,11 +29,10 @@ public class musicConstructor  extends Game {
             GameOverAView gameOverView = new GameOverAView();
             root.addView(View.GAME_OVER, gameOverView);
     }
-
-    public enum View {
-            GAME, GAME_OVER;
+	public enum View {
+        GAME, GAME_OVER;
+}
     }
-
-	}
+	
 
 
